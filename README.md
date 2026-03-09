@@ -1,30 +1,36 @@
-# CAITLibot123
+# LampLighter Quality: Education Inspection Agent
 
-CAITLibot is a tool for generating bespoke, student-led, AI-powered learning activities, designed for GCSE and A level students (aged 14-18).
+**Version 1.0.1**
 
-It is currently being used by teachers at Eton College in the UK, as well as a handful of other schools and trusts.
+LampLighter Quality is a specialized pedagogical analysis tool designed for Quality Nominees, Lead Practitioners, and Heads of Department in UK Further Education.
 
-CAITLibot is an Express.js application that integrates with the OpenAI API. To use it, you'll need to sign up for an OpenAI account, top up with some credit, and generate an API key. $10 would be more than enough to get started. It could also use the Google Gemini API instead, with minimal modification (https://ai.google.dev/gemini-api/docs/openai#javascript).
+It serves as a "Quality Assurance Copilot," assisting staff in triangulating evidence against the Education Inspection Framework (EIF). It streamlines the creation of Self-Assessment Reports (SARs), generates developmental feedback for lesson observations, and prepares departments for "Deep Dive" lines of enquiry.
 
-## Getting Started
+## Key Capabilities
 
-Please see these three documents:
-- [Instructions for installation](Instructions%20for%20CAITLibot%20installation.pdf)
-- [Instructions for configuration and customisation](Instructions%20for%20CAITLibot%20configuration%20and%20customisation.pdf)
-- [Teachers' guide](CAITLibot%20teachers'%20guide.pdf)
+* **EIF Alignment:** All outputs are mapped strictly to the Ofsted *Intent, Implementation, and Impact* framework.
+* **Deep Dive Preparation:** Simulates inspection lines of enquiry based on specific curriculum areas (e.g., "How do you sequence knowledge in Level 3 Engineering?").
+* **Observation Feedback:** Generates constructive, developmental feedback for teaching staff based on raw observation notes, stripping away bias and focusing on learning outcomes.
+* **SAR & QIP Support:** assists in synthesising complex data sets into coherent Self-Assessment Reports and actionable Quality Improvement Plans.
 
-## Version
+## Security & Privacy
 
-This open source release corresponds to **version 1.0.1**.
+LampLighter Quality is designed to handle sensitive teaching and learning data securely:
+* **Secure Authentication:** User-specific login ensuring distinct workspaces for different departments.
+* **Anonymisation Protocols:** Built-in prompts ensure no student or staff names are retained in the analysis history.
+* **Database Encryption:** All historic records and session data are encrypted at rest.
+
+## Technology Stack
+
+This is a **Node.js / Express** application backed by a **PostgreSQL** database. It integrates with the OpenAI API to provide context-aware pedagogical analysis while maintaining strict data segregation between users.
 
 ## License
 
-CAITLibot is released under the terms of the [MIT License](LICENSE)
+LampLighter Quality is released under the terms of the **MIT License**.
 
-(c) 2025 Steve Birtles, The Tony Little Centre for Innovation and Research in Learning (CIRL), Eton College, Windsor, UK.
+## Contact
 
-## Contact details
+**Andrew Cummins** *Project Lead & Developer*
 
-Feel free to get in touch via LinkedIn: https://www.linkedin.com/in/stevebirtles
-
-Please visit https://cirl.etoncollege.com/ for more information about CIRL.
+For enquiries, collaboration, or further information regarding the LampLighter project, please connect via LinkedIn:
+[https://www.linkedin.com/in/andrewdcummins](https://www.linkedin.com/in/andrewdcummins)

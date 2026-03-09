@@ -221,12 +221,10 @@ function displayPrompts(data) {
             });
         }
 
-        // 3. Populate Dual Outputs (Copilot & ChatGPT)
+        // 3. Populat Copilot Output
         const copilotBox = document.getElementById(`copilot-text-${i + 1}`);
-        const chatgptBox = document.getElementById(`chatgpt-text-${i + 1}`);
         
         if (copilotBox) copilotBox.innerText = promptData.copilot_prompt;
-        if (chatgptBox) chatgptBox.innerText = promptData.chatgpt_prompt;
 
         // 4. Show Container
         const container = document.getElementById(`response-container-${i + 1}`);
@@ -253,8 +251,7 @@ function displayPrompts(data) {
             }
         };
 
-        setupCopy(`copy-copilot-${i + 1}`, `copilot-text-${i + 1}`);
-        setupCopy(`copy-chatgpt-${i + 1}`, `chatgpt-text-${i + 1}`);
+    setupCopy(`copy-copilot-${i + 1}`, `copilot-text-${i + 1}`);
     }
 
     prompt_count += data.prompts.length;
