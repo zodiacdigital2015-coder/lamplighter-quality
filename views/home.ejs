@@ -242,18 +242,6 @@
                 <div class="row">
                     <div class="col-1"></div>
                     <div class="col-10">
-                        <div style="text-align: center; padding-top: 25px;" id="toggle-container-1" class="hidden">
-                            <div class="copy-toggle-switch" id="copy-toggle" >
-                                <input type="checkbox" id="copyToggleCheckbox" />
-                                <label class="copy-toggle-switch-label" for="copyToggleCheckbox">
-                                    <div class="copy-toggle-switch-inner">
-                                        <span>Copy plain text</span>
-                                        <span>Copy ChatGPT link</span>
-                                    </div>
-                                    <div class="copy-toggle-switch-switch"></div>
-                                </label>
-                            </div>
-                        </div>
                         <div class="loader-container hidden" id="recipe-loader">
                             <div class="loader"></div>
                         </div>
@@ -318,15 +306,15 @@
 
             <% } %>
 
-            <div id="generate-more-container" class="row hidden" style="padding-top: 20px;">
-                <div class="col-4"></div>        
-                <div class="col-4 submit-button">
-                    <button class="btn btn-primary" id="generate-more-button">
+<div id="generate-more-container" class="row hidden" style="padding-top: 20px;">
+                <div class="col-2"></div>        
+                <div class="col-8 submit-button">
+                    <button class="btn btn-primary" id="generate-more-button" style="width: 100%;">
                         <div class="material-symbols-outlined response-icon">edit_note</div>
                         Generate<strong>&nbsp;more&nbsp;</strong>prompts
                     </button>
                 </div>        
-                <div class="col-4"></div>
+                <div class="col-2"></div>
             </div>
 
         </div>
